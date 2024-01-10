@@ -1,0 +1,78 @@
+.input-login {
+  width: 100%;
+    min-height: 43.5px;
+    /* max-height: 150px; */
+    background: transparent;
+    padding: 17px;
+    border-radius: 10px;
+    border: 2px solid #e3e3e385;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    resize: none;
+    outline: none;
+    resize: vertical;
+    overflow-y: hidden;
+    padding-right: 46px;
+    padding-left: 40px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.input-login:focus {
+  border: 1px solid #cccccc2e;
+  box-shadow: inset 0 0 5px #5f5d5d6b;
+}
+
+#label_nombre,#label_pass {
+  margin-left: 36px;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-top: 3px;
+  backdrop-filter: blur(7px);
+  color: #000000ad;
+}
+
+#label_nombre.active,#label_pass.active {
+  transform: translateY(-12px) translateX(10px) scale(.97);
+  transform-origin: 0 0;
+  border-style: solid;
+  border-color: #3e3f3f5b;
+  border-width: 2px;
+  background: #babcbb;
+  border-radius: 7px;
+}
+
+.css-button-shadow-border-sliding--black {
+    min-width: 130px;
+    height: 55px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 1px 1px 1px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    background: #212529;
+   z-index: 1;
+   margin-top: 5px;
+  }
+  .css-button-shadow-border-sliding--black:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  .css-button-shadow-border-sliding--black:after {
+    border-radius: 5px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    box-shadow:inset 1px 1px 1px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+    background-color: #343a40;
+    right: 0;
+  }

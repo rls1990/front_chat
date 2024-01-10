@@ -1,0 +1,140 @@
+#chat_messages {
+  min-height: 50vh;
+  max-height: 400px;
+  overflow: auto;
+  margin-top: 1px;
+  background: linear-gradient(
+      to bottom,
+      rgba(104, 104, 104, 0.288),
+      rgba(70, 69, 69, 0.089)
+    ),
+    url(/bg-chat2.jpg);
+  background-size: auto;
+}
+
+#chat_message {
+  min-height: 10vh;
+  position: relative;
+}
+
+#chat_message .input-field {
+  margin-top: 30px;
+}
+
+.chatTextarea {
+  width: 100%;
+  min-height: 43.5px;
+  /*max-height: 150px;*/
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  resize: none;
+  outline: none;
+  resize: vertical;
+  transition: border 0.4s ease;
+  transition: height 0.4s ease;
+  overflow-y: hidden;
+  padding-right: 41px;
+}
+
+.chatTextarea:focus {
+  border: 1px solid #77b300;
+  box-shadow: 0 0 5px rgba(119, 179, 0, 0.5);
+}
+
+#chat_message .input-field > label {
+  margin-left: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+#chat_message .input-field > label:not(.label-icon).active {
+  transform: translateY(-14px) translateX(10px) scale(1.1);
+  background-color: #e0e0e0;
+  transform-origin: 0 0;
+}
+
+#btn-chat {
+  position: absolute;
+  top: 37px;
+  right: 4px;
+  color: rgb(90 95 80 / 51%);
+  filter: drop-shadow(0 0 1px green);
+}
+
+#btn-chat:focus {
+  background-color: transparent;
+}
+
+#chat_messages ul li .msg-content {
+  /*overflow-y: auto;*/
+  word-wrap: break-word;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
+  height: 100%;
+  position: relative;
+}
+
+#chat_messages ul li .msg-avatar {
+  text-align: center;
+  padding-left: 0px;
+  padding-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#chat_messages ul li .msg-avatar svg {
+  height: 37px;
+}
+
+#chat_messages ul li .msg-content .flecha-l {
+  width: 15px;
+  height: 15px;
+  background-color: #d5d5d5;
+  position: absolute;
+  left: -6px;
+  top: 0px;
+  transform: rotate(90deg);
+  border-radius: 0px 0px 24px 0px;
+}
+
+#chat_messages ul li .msg-content .flecha-r {
+  width: 30px;
+  height: 30px;
+  background-color: #e0e0e0;
+  position: absolute;
+  right: -3px;
+  top: 12px;
+  transform: rotate(45deg);
+}
+
+#chat_messages ul .local {
+  width: 80%;
+  margin-left: 20%;
+}
+
+#chat_messages ul .unlocal {
+  width: 80%;
+  margin-right: 20%;
+}
+
+.titulo-mensage {
+  position: absolute;
+  z-index: 3;
+  background: #d5d5d5;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0px;
+  padding-left: 17px;
+  border-radius: 12px 12px 0px 0px;
+  height: 25px;
+  line-height: 21px;
+}
+
+#chat_contactos{
+  height: 100%;
+}
