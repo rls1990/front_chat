@@ -112,7 +112,7 @@ export default function Register() {
                   type="password"
                   id="password"
                   className="browser-default input-login"
-                  {...register("password", { required: true, minLength: 6 })}
+                  {...register("password", { required: true, minLength: 4 })}
                 />
                 <label id="label_pass" htmlFor="password">
                   Password

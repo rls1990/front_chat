@@ -37,6 +37,7 @@
   transition: height 0.4s ease;
   overflow-y: hidden;
   padding-right: 41px;
+  color: black;
 }
 
 .chatTextarea:focus {
@@ -135,6 +136,6 @@
   line-height: 21px;
 }
 
-#chat_contactos{
+#chat_contactos {
   height: 100%;
 }
